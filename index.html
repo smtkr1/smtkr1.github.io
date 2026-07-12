@@ -1,1 +1,398 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="description" content="Portfolio Website for Sumeet Kumar - Product Manager"/><meta name="theme-color" content="#000000"/><link rel="manifest" href="/smtkr1.github.io/manifest.json"/><link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet"/><title>Sumeet Kumar - Portfolio</title><script defer="defer" src="/smtkr1.github.io/static/js/main.38e1b752.js"></script><link href="/smtkr1.github.io/static/css/main.23582e54.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sumeet Kumar — AI Product Manager</title>
+<meta name="description" content="Sumeet Kumar — Senior Product Manager in Bengaluru. Seven years across SaaS, CRM, marketplaces, and EdTech; five 0→1 launches and two production AI systems serving 20,000 learners.">
+<link rel="canonical" href="https://sumeetkr.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sumeet Kumar — AI Product Manager">
+<meta property="og:description" content="Products that ship — from ERP to multi-agent AI. Senior PM at Simplilearn; two production AI systems, five 0→1 launches, IIM Visakhapatnam MBA.">
+<meta property="og:url" content="https://sumeetkr.com/">
+<meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128300;</text></svg>">
+<style>
+  :root{
+    --ground:#0C1417; --panel:#121D21; --panel2:#16242A;
+    --ink:#E8EFEF; --muted:#8FA6AA; --faint:#5E7478;
+    --accent:#4FC4BE; --accent-deep:#0E7C7B; --amber:#E3A857;
+    --line:#22343A; --chipbg:#182930;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --ground:#F4F7F7; --panel:#FFFFFF; --panel2:#EDF3F3;
+      --ink:#15272B; --muted:#54696E; --faint:#7E9296;
+      --accent:#0E7C7B; --accent-deep:#0A5958; --amber:#A96A12;
+      --line:#D9E2E3; --chipbg:#E5EEEE;
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+  body{margin:0; background:var(--ground); color:var(--ink);
+    font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,sans-serif;
+    line-height:1.55; font-size:16.5px;}
+  .serif{font-family:"Iowan Old Style",Palatino,"Palatino Linotype",Georgia,serif;}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}
+  a{color:var(--accent); text-decoration:none;}
+  a:hover,a:focus-visible{text-decoration:underline; outline:none;}
+
+  nav{position:sticky; top:0; z-index:10; background:color-mix(in srgb, var(--ground) 88%, transparent);
+    backdrop-filter:blur(8px); border-bottom:1px solid var(--line);}
+  nav .in{max-width:1040px; margin:0 auto; padding:14px 24px;
+    display:flex; align-items:center; gap:24px;}
+  nav .logo{font-weight:700; letter-spacing:-.01em; color:var(--ink); font-size:15px;}
+  nav .links{margin-left:auto; display:flex; gap:20px; font-size:14px; font-weight:600;}
+  nav .links a{color:var(--muted);}
+  nav .links a:hover{color:var(--accent); text-decoration:none;}
+
+  .hero{position:relative; overflow:hidden; border-bottom:1px solid var(--line);}
+  #net{position:absolute; inset:0; width:100%; height:100%; opacity:.5;}
+  .hero .in{position:relative; max-width:1040px; margin:0 auto; padding:96px 24px 72px;}
+  .eyebrow{font-size:12.5px; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--accent); font-weight:700; margin:0 0 14px;}
+  h1{font-family:"Iowan Old Style",Palatino,"Palatino Linotype",Georgia,serif;
+    font-size:clamp(34px,6vw,58px); line-height:1.08; font-weight:600;
+    letter-spacing:-.015em; margin:0 0 18px; max-width:16ch; text-wrap:balance;}
+  h1 em{font-style:italic; color:var(--accent);}
+  .hero p.lede{font-size:18.5px; color:var(--muted); max-width:56ch; margin:0 0 34px;}
+  .stats{display:flex; flex-wrap:wrap; gap:12px;}
+  .stat{background:var(--panel); border:1px solid var(--line); border-radius:10px;
+    padding:14px 20px; min-width:150px;}
+  .stat .v{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:24px; font-weight:700; color:var(--accent); font-variant-numeric:tabular-nums;}
+  .stat .l{font-size:12px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase; margin-top:2px;}
+
+  section{max-width:1040px; margin:0 auto; padding:72px 24px 8px;}
+  .sechead{display:flex; align-items:baseline; gap:16px; margin-bottom:8px;}
+  h2{font-family:"Iowan Old Style",Palatino,"Palatino Linotype",Georgia,serif;
+    font-size:clamp(26px,3.6vw,36px); font-weight:600; letter-spacing:-.01em; margin:0;}
+  .sechead .rule{flex:1; height:1px; background:var(--line);}
+  .secsub{color:var(--muted); max-width:62ch; margin:6px 0 30px;}
+
+  .case{background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    padding:30px 32px; margin:0 0 22px;}
+  @media (max-width:640px){ .case{padding:22px 20px;} }
+  .case .tag{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--amber); margin-bottom:10px;}
+  .case h3{font-family:"Iowan Old Style",Palatino,Georgia,serif; font-size:24px;
+    font-weight:600; margin:0 0 10px;}
+  .case p{color:var(--muted); max-width:68ch; margin:.4em 0;}
+  .case p b{color:var(--ink); font-weight:650;}
+  .chips{display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 4px;}
+  .chip{background:var(--chipbg); border:1px solid var(--line); border-radius:999px;
+    padding:5px 14px; font-size:13px; font-weight:600; color:var(--ink);}
+  .chip b{color:var(--accent); font-family:ui-monospace,Menlo,monospace;}
+  .case ul{color:var(--muted); margin:12px 0 4px; padding-left:1.2em; max-width:70ch;}
+  .case li{margin:5px 0;}
+  .case li b{color:var(--ink); font-weight:650;}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin:6px 0 20px;}
+  .tile{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px;}
+  .tile h4{margin:0 0 8px; font-size:16px; font-weight:700;}
+  .tile p{margin:0; font-size:14.5px; color:var(--muted);}
+
+  .tl{border-left:2px solid var(--line); margin:10px 0 20px 6px; padding-left:26px;}
+  .tl .item{position:relative; margin:0 0 26px;}
+  .tl .item::before{content:""; position:absolute; left:-33px; top:6px; width:12px; height:12px;
+    border-radius:50%; background:var(--ground); border:3px solid var(--accent);}
+  .tl .when{font-family:ui-monospace,Menlo,monospace; font-size:12.5px; color:var(--faint);}
+  .tl h4{margin:2px 0 4px; font-size:17px; font-weight:700;}
+  .tl h4 span{color:var(--muted); font-weight:500;}
+  .tl p{margin:0; color:var(--muted); font-size:15px; max-width:66ch;}
+  .tl p b{color:var(--ink); font-weight:650;}
+
+  .about{display:grid; grid-template-columns:1.4fr 1fr; gap:32px;}
+  @media (max-width:760px){ .about{grid-template-columns:1fr;} }
+  .about p{color:var(--muted); max-width:60ch;}
+  .about p b{color:var(--ink);}
+  .facts{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px; font-size:14.5px;}
+  .facts dt{font-size:11.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--accent); margin:14px 0 3px;}
+  .facts dt:first-child{margin-top:0;}
+  .facts dd{margin:0; color:var(--muted);}
+  .facts dl{margin:0;}
+
+  footer{margin-top:80px; border-top:1px solid var(--line); background:var(--panel);}
+  footer .in{max-width:1040px; margin:0 auto; padding:56px 24px 48px;}
+  footer h2{margin-bottom:10px;}
+  footer p{color:var(--muted); max-width:56ch;}
+  .cta{display:inline-block; background:var(--accent-deep); color:#fff; font-weight:700;
+    padding:12px 26px; border-radius:8px; margin:14px 14px 0 0;}
+  .cta:hover{text-decoration:none; filter:brightness(1.1);}
+  .cta.ghost{background:transparent; color:var(--accent); border:1px solid var(--accent);}
+  .fine{font-size:12.5px; color:var(--faint); margin-top:34px;}
+</style>
+</head>
+<body>
+
+<nav aria-label="Site">
+  <div class="in">
+    <span class="logo">sumeetkr<span style="color:var(--accent)">.com</span></span>
+    <div class="links">
+      <a href="#work">Work</a>
+      <a href="#platform">Platform</a>
+      <a href="#journey">Journey</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="in">
+    <p class="eyebrow">Sumeet Kumar · Senior Product Manager · Bengaluru</p>
+    <h1>Products that ship — from ERP to <em>multi-agent AI</em>.</h1>
+    <p class="lede">Seven years of product management across SaaS, CRM, marketplaces, and EdTech — five 0→1 launches, a founder chapter, and two production AI systems now serving twenty thousand learners. IIM Visakhapatnam MBA. Currently Senior PM at Simplilearn.</p>
+    <div class="stats">
+      <div class="stat"><div class="v">7+ yrs</div><div class="l">Product management</div></div>
+      <div class="stat"><div class="v">5</div><div class="l">0→1 launches</div></div>
+      <div class="stat"><div class="v">2</div><div class="l">Production AI systems</div></div>
+      <div class="stat"><div class="v">$1M+</div><div class="l">0→1 revenue generated</div></div>
+      <div class="stat"><div class="v">19,659</div><div class="l">Learners served by Arya</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="work">
+  <div class="sechead"><h2>Featured work</h2><div class="rule"></div></div>
+  <p class="secsub">Highlights from every chapter — production AI systems at Simplilearn, AI learning tools at Edfora, revenue-critical CRM work at LeadSquared, two 0→1 SaaS products at Click Labs, and a founder run at Nazdik.</p>
+
+  <div class="case">
+    <span class="tag">Simplilearn · Multi-agent GenAI assistant · Live in production</span>
+    <h3>Arya — Simplilearn's learning companion</h3>
+    <p>A <b>Supervisor Router orchestrating four specialised agents</b> — Learning Buddy, Project Buddy (B2B), Help &amp; Support, and Context Switch — that classifies every learner query and holds sticky, multi-turn context across topic changes.</p>
+    <div class="chips">
+      <span class="chip">WAU <b>335 → 4,580</b></span>
+      <span class="chip"><b>19,659</b> unique learners</span>
+      <span class="chip"><b>38,245+</b> conversations</span>
+      <span class="chip"><b>9+</b> vector stores</span>
+    </div>
+    <ul>
+      <li>Designed the full <b>orchestration layer</b>: intent classification, product-specific routing rules, and multi-turn context handling.</li>
+      <li>Built retrieval across <b>OpenAI + Pinecone vector stores</b> with structured knowledge bases covering courses, programs, FAQs, and project content.</li>
+      <li>Defined <b>15+ learner-profile variables</b> powering personalised next-course recommendations through ranking and exclusion logic.</li>
+      <li>Extended the same AI muscle into an <b>automated project-review system</b> that cut review turnaround by <b>75%</b>.</li>
+    </ul>
+  </div>
+
+  <div class="case">
+    <span class="tag">Simplilearn · AI for live operations · Phases 1–2 live</span>
+    <h3>Control Centre — AI-monitored live classes</h3>
+    <p>An <b>LLM pipeline fused with a deterministic rule engine</b> that watches every concurrent live class through a six-state session-health model — surfacing issues to operations teams in real time, before learners have to complain.</p>
+    <div class="chips">
+      <span class="chip"><b>6-state</b> health model</span>
+      <span class="chip"><b>43</b> KPI benchmark suite</span>
+      <span class="chip">LLM <b>+</b> rule engine hybrid</span>
+    </div>
+    <ul>
+      <li>Defined the <b>quality &amp; latency benchmark suite</b> (43 KPIs) used to evaluate and evolve the AI pipeline.</li>
+      <li>Scoped the escalation system: SOS alerts, instructor presence tracking, and a redesigned rule engine for the next phase.</li>
+      <li>A study in <b>AI economics</b>: model selection and migration planned around per-message cost and latency at scale.</li>
+    </ul>
+  </div>
+
+  <div class="case">
+    <span class="tag">Edfora · EdTech · 02/2023 – 04/2025</span>
+    <h3>Adaptive learning &amp; AI study tools</h3>
+    <p>Two years building <b>AI-assisted learning before it was fashionable</b> — summarisation, adaptive models, and the analytics that tell instructors which learner needs them next.</p>
+    <div class="chips">
+      <span class="chip"><b>+90%</b> time-on-platform</span>
+      <span class="chip"><b>+27%</b> adoption</span>
+      <span class="chip"><b>+20%</b> retention</span>
+      <span class="chip">WAU <b>+15%</b> · MAU <b>+22%</b></span>
+    </div>
+    <ul>
+      <li>Built an <b>AI tool summarising PDF books, audio, and video</b>, improving student revision efficiency by 25%.</li>
+      <li>Shipped <b>adaptive learning models</b> improving exam-score prediction accuracy by 30%, and a smarter test-generation algorithm over the question bank.</li>
+      <li>Designed a cohort-analytics <b>“transformative potential” score</b> surfacing high-priority learner interventions for instructors — with instructor-only visibility guardrails.</li>
+      <li>Led the <b>Stakeholder App redesign</b> around personalised learner journeys and a gamification system that moved both adoption and retention.</li>
+    </ul>
+  </div>
+
+  <div class="case">
+    <span class="tag">LeadSquared · CRM SaaS · 08/2021 – 09/2022</span>
+    <h3>Forms, payments &amp; pricing on a CRM platform</h3>
+    <p>Owned <b>Forms &amp; Processes</b> in the Sales Workflow division — the revenue-critical path where every basis point of failure is money.</p>
+    <div class="chips">
+      <span class="chip">Payment failures <b>5% → &lt;1%</b></span>
+      <span class="chip"><b>+25%</b> product-line revenue</span>
+      <span class="chip"><b>+12%</b> portal registration</span>
+    </div>
+    <ul>
+      <li>Instrumented payment failure codes, clustered root causes, and redesigned the payment page flow — failures fell from 5% to under 1%.</li>
+      <li>Restructured <b>pricing and packaging</b> for Forms &amp; Processes, lifting revenue 25%; optimised payment APIs &amp; webhooks for a further 20% cut in transaction failures.</li>
+      <li>Rebuilt authentication and login flows (+12% registration) and improved support resolve rate and resolution time by 20%.</li>
+    </ul>
+  </div>
+
+  <div class="case">
+    <span class="tag">Click Labs · SaaS · 04/2019 – 07/2021</span>
+    <h3>Two 0→1 SaaS products, one team of twelve</h3>
+    <p>Designed, built, and launched <b>Husky</b> (freelancer marketplace) and <b>Juggernaut ERP</b> (HRMS, POS, WMS) from zero — then sold them to the world.</p>
+    <div class="chips">
+      <span class="chip"><b>USD 1M+</b> business generated</span>
+      <span class="chip"><b>150+</b> global customers</span>
+      <span class="chip">Team of <b>12</b></span>
+    </div>
+    <ul>
+      <li>Launched <b>mobile &amp; tablet apps</b> for POS, HRMS, and Husky, defining end-to-end user journeys from wireframe to release.</li>
+      <li>Delivered <b>ERP implementations</b> across hiring &amp; payroll, procurement &amp; inventory, project management, CRM, and support — cutting client operational costs ~15%.</li>
+      <li>Integrated <b>SkuVault, Yelo, Tookan, Stripe, and PayPal</b>; ran full Agile/Scrum delivery across both product lines.</li>
+    </ul>
+  </div>
+
+  <div class="case">
+    <span class="tag">Nazdik · Founder · 09/2022 – 01/2023</span>
+    <h3>A hyperlocal marketplace, founded and folded honestly</h3>
+    <p>Built and launched a <b>hyperlocal commerce marketplace</b> (mobile + web) connecting local retailers and consumers — then wound it down against pre-set unit-economics kill criteria.</p>
+    <div class="chips">
+      <span class="chip"><b>500+</b> merchants onboarded</span>
+      <span class="chip"><b>10,000+</b> SKUs</span>
+      <span class="chip"><b>15%</b> MoM user growth</span>
+    </div>
+    <ul>
+      <li>Instrumented the full product journey with <b>UXCam, Inspectlet, and Google Analytics</b>, lifting average session duration 15%.</li>
+      <li>Grew merchant sign-ups 20% through targeted campaigns and community outreach; ran paid acquisition to 15% MoM growth.</li>
+      <li>The lasting lesson: <b>validate distribution before building</b> — a discipline that has shaped every launch since.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="platform">
+  <div class="sechead"><h2>Platform &amp; ecosystem</h2><div class="rule"></div></div>
+  <p class="secsub">The unglamorous half of the current role at Simplilearn: making seven systems — LMS, cohort operations, web CMS, revenue, mobile, third-party LMS, and a free-learning funnel — agree about what a learner owns, sees, and pays.</p>
+  <div class="grid">
+    <div class="tile"><h4>Unified program validity</h4><p>One source of truth for learner access across four platforms, with conflict-resolution logic for shared entitlements and B2B extension rules.</p></div>
+    <div class="tile"><h4>Course swap &amp; refunds</h4><p>End-to-end swap workflow across revenue, cohort ops, and CRM — three swap modes, dual-invoice accounting with GST treatment, automated entitlement actions.</p></div>
+    <div class="tile"><h4>Pricing architecture</h4><p>Global-default + cluster-override pricing with geo rules, audit logging, and a backward-compatible migration across a live catalog.</p></div>
+    <div class="tile"><h4>Live-class infrastructure</h4><p>Timezone/DST-aware scheduling, registration flows, Zoom webhook &amp; attendance-sync migration, and a self-hosted tokenized calendar feed that retired a paid vendor.</p></div>
+    <div class="tile"><h4>Mobile blended learning</h4><p>Shipped the blended-learning experience on Android (iOS in development) with full lifecycle-event instrumentation from day one.</p></div>
+    <div class="tile"><h4>Partners &amp; build-vs-buy</h4><p>Integration requirements for IBM SkillsNetwork (SSO/LTI, score sync); university-partner delivery on Canvas; a certificate-platform build-vs-buy decision with a Month-9 readiness gate.</p></div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="sechead"><h2>Journey</h2><div class="rule"></div></div>
+  <p class="secsub">Breadth first — SaaS, CRM, a founder chapter — then a deliberate commitment to one thesis: AI-native learning products.</p>
+  <div class="tl">
+    <div class="item">
+      <div class="when">06/2025 — present</div>
+      <h4>Senior Product Manager <span>· Simplilearn</span></h4>
+      <p>Two production AI systems (<b>Arya</b>, <b>Control Centre</b>) plus platform ownership across validity, pricing, revenue workflows, and live-class infrastructure.</p>
+    </div>
+    <div class="item">
+      <div class="when">02/2023 — 04/2025</div>
+      <h4>Product Manager <span>· Edfora</span></h4>
+      <p>AI summarisation and adaptive learning models; app redesign that lifted time-on-platform <b>90%</b>; gamification driving <b>+27% adoption, +20% retention</b>; a cohort-analytics score surfacing at-risk learners for instructors.</p>
+    </div>
+    <div class="item">
+      <div class="when">09/2022 — 01/2023</div>
+      <h4>Co-Founder <span>· Nazdik</span></h4>
+      <p>Hyperlocal commerce marketplace — <b>500+ merchants, 10,000+ SKUs</b>. Wound down on pre-set unit-economics criteria; the discipline stuck.</p>
+    </div>
+    <div class="item">
+      <div class="when">08/2021 — 09/2022</div>
+      <h4>Product Manager <span>· LeadSquared</span></h4>
+      <p>Forms &amp; Processes on the CRM platform: payment failures <b>5% → &lt;1%</b>, pricing restructure <b>+25% revenue</b>, auth flows <b>+12% registration</b>.</p>
+    </div>
+    <div class="item">
+      <div class="when">04/2019 — 07/2021</div>
+      <h4>Product Manager <span>· Click Labs</span></h4>
+      <p>Two <b>0→1 SaaS products</b> (freelancer marketplace + ERP suite) with a matrixed team of 12 — <b>USD 1M+</b> from 150+ global customers.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="sechead"><h2>About</h2><div class="rule"></div></div>
+  <div class="about">
+    <div>
+      <p>I'm a product manager who likes the whole stack of a problem — the agent prompt <b>and</b> the entitlement table it depends on. Most of my last four years have gone into one question: <b>what does great AI-assisted learning actually look like in production</b>, once you're past the demo and into vector stores, routing failures, cost curves, and ops teams at 2 a.m.?</p>
+      <p>Before that: an MBA from <b>IIM Visakhapatnam</b> (Finance &amp; Analytics), an engineering degree, a CRM platform, an ERP suite, and one startup that taught me more per month than anything since.</p>
+      <p>I write occasionally about AI product management — routing design, agent metrics, and the honest versions of metric stories. Say hello if you're building in this space.</p>
+    </div>
+    <div class="facts">
+      <dl>
+        <dt>Education</dt>
+        <dd>MBA, IIM Visakhapatnam (2017–19) · B.E. ECE, Bangalore Institute of Technology (2012–16)</dd>
+        <dt>Certifications</dt>
+        <dd>Certified Scrum Master® · McKinsey.org Forward · Generative AI with LLMs · Pendo Product-led</dd>
+        <dt>Craft</dt>
+        <dd>Multi-agent orchestration · RAG · intent routing · AI quality metrics · experimentation · pricing &amp; packaging · platform integrations</dd>
+        <dt>Toolkit</dt>
+        <dd>SQL · Python · Mixpanel · Amplitude · Tableau · Figma · Jira · OpenAI Platform · Pinecone</dd>
+        <dt>Languages</dt>
+        <dd>English (full professional) · Hindi (native)</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="in">
+    <h2>Let's talk</h2>
+    <p>Open to senior product roles across AI-native products, platforms, and marketplaces — Bengaluru, remote, or relocation. Reach me on LinkedIn.</p>
+    <a class="cta" href="https://www.linkedin.com/in/sumeet-kumar-2466b3105/" rel="me">Connect on LinkedIn</a>
+    <p class="fine">© 2026 Sumeet Kumar · Built as a single self-contained page — no trackers, no cookies. Metrics cited are from shipped work at the companies named; internal system names generalised.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var c = document.getElementById('net');
+  if(!c) return;
+  var ctx = c.getContext('2d');
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var N = 26, nodes = [], links = [];
+  function accent(){
+    return getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#4FC4BE';
+  }
+  function size(){
+    var r = c.parentElement.getBoundingClientRect();
+    c.width = r.width * devicePixelRatio; c.height = r.height * devicePixelRatio;
+    ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+    return r;
+  }
+  var rect = size();
+  for(var i=0;i<N;i++){
+    nodes.push({x:Math.random()*rect.width, y:Math.random()*rect.height,
+      vx:(Math.random()-.5)*.25, vy:(Math.random()-.5)*.25, r:1.5+Math.random()*2});
+  }
+  function draw(){
+    rect = c.parentElement.getBoundingClientRect();
+    ctx.clearRect(0,0,rect.width,rect.height);
+    var col = accent();
+    for(var i=0;i<N;i++){
+      var a = nodes[i];
+      if(!reduce){
+        a.x+=a.vx; a.y+=a.vy;
+        if(a.x<0||a.x>rect.width) a.vx*=-1;
+        if(a.y<0||a.y>rect.height) a.vy*=-1;
+      }
+      for(var j=i+1;j<N;j++){
+        var b = nodes[j], dx=a.x-b.x, dy=a.y-b.y, d=Math.sqrt(dx*dx+dy*dy);
+        if(d<150){
+          ctx.globalAlpha = (1-d/150)*.28;
+          ctx.strokeStyle = col; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+        }
+      }
+    }
+    ctx.globalAlpha = .6; ctx.fillStyle = col;
+    for(var k=0;k<N;k++){
+      ctx.beginPath(); ctx.arc(nodes[k].x,nodes[k].y,nodes[k].r,0,7); ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+    if(!reduce) requestAnimationFrame(draw);
+  }
+  addEventListener('resize', function(){ size(); if(reduce) draw(); });
+  draw();
+})();
+</script>
+
+</body>
+</html>
